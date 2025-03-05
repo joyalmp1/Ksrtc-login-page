@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSRTC LOGIN</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <form id="loginForm" action="ksertc log.html" method="post">
+        <div class="imgcontainer">
+            <img src="https://www.karnatakacareers.in/wp-content/uploads/2019/03/ksrtc-banner-logo-300x57.jpg" alt="KSRTC Logo" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="uname" placeholder="Enter Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="psw" placeholder="Enter Password" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="footer">
+            <button type="button" class="cancelbtn" onclick="resetForm()">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+
+    <script>
+        function resetForm() {
+            document.getElementById("loginForm").reset(); // Clears the form fields
+        }
+    </script>
+</body>
+</html>
